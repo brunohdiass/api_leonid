@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Music App</h1>
+  </header>
+
+  <div class="container">
+    <!-- Coluna do Formulário -->
+    <aside class="sidebar">
+      <form id="form-musica">
+        <h2>Cadastrar Música</h2>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="link">Link:</label>
+        <input type="text" id="link" name="link" required />
+
+        <label for="duracao">Duração:</label>
+        <input type="text" id="duracao" name="duracao" required />
+
+        <label for="data_lancamento">Data de Lançamento:</label>
+        <input type="date" id="data_lancamento" name="data_lancamento" required />
+
+        <label for="foto_capa">URL da Capa:</label>
+        <input type="text" id="foto_capa" name="foto_capa" required />
+
+        <label for="letra">Letra:</label>
+        <textarea id="letra" name="letra" required></textarea>
+
+        <button type="submit">Cadastrar Música</button>
+      </form>
+    </aside>
+
+    <!-- Coluna dos Cards -->
+    <main class="cards">
+      <h2>Músicas Cadastradas</h2>
+      <ul id="musica-lista">
+        <!-- Cards gerados por JavaScript -->
+      </ul>
+    </main>
+  </div>
+
+  <script src="musicas.js"></script>
+</body>
+</html>
